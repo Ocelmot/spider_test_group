@@ -431,6 +431,7 @@ dependencies = [
  "num-integer",
  "num-traits",
  "rand",
+ "serde",
 ]
 
 [[package]]
@@ -780,6 +781,7 @@ dependencies = [
  "sha256",
  "tokio",
  "tracing",
+ "uuid",
 ]
 
 [[package]]
@@ -825,7 +827,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "test_peripheral"
+name = "test_group"
 version = "0.1.0"
 dependencies = [
  "serde_json",
@@ -934,6 +936,16 @@ checksum = "7d3160b73c9a19f7e2939a2fdad446c57c1bbbbf4d919d3213ff1267a580d8b5"
 dependencies = [
  "crypto-common",
  "subtle",
+]
+
+[[package]]
+name = "uuid"
+version = "1.8.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a183cf7feeba97b4dd1c0d46788634f6221d87fa961b305bed08c851829efcc0"
+dependencies = [
+ "getrandom",
+ "serde",
 ]
 
 [[package]]
